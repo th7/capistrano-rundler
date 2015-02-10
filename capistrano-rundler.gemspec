@@ -9,10 +9,6 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Tyler Hartland"]
   spec.email         = ["tyler.hartland@code42.com"]
 
-  if spec.respond_to?(:metadata)
-    spec.metadata['allowed_push_host'] = "TODO: Set to 'http://mygemserver.com' to prevent pushes to rubygems.org, or delete to allow pushes to any server."
-  end
-
   spec.summary       = %q{Triggers the rundle command during deploy}
   spec.homepage      = "TODO: Put your gem's website or public repo URL here."
   spec.license       = "MIT"
