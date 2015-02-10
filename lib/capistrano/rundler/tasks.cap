@@ -1,0 +1,13 @@
+namespace :rundler do
+  desc 'Install R packages'
+  task :install do
+    on roles(:all) do
+      within release_path do
+        execute "#{release_path}/rundle"
+      end
+    end
+  end
+end
+
+# this is the same before hook used by bundler
+before 'deploy:updated', 'rundler:install'
