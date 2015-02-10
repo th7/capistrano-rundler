@@ -3,7 +3,7 @@ namespace :rundler do
   task :install do
     on roles(:all) do
       within release_path do
-        execute "#{release_path}/rundle"
+        execute :bundle, :exec, :rundle
       end
     end
   end
